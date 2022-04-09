@@ -1,5 +1,7 @@
 Node Express Session Authentication Sample
 
+![Screen Shot](https://github.com/LeulAria/NodeSessionAuth/blob/main/assets/screenshot.png)
+
 ### installation
   
 
