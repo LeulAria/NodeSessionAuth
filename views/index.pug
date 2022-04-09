@@ -1,0 +1,12 @@
+extends layout.pug
+
+block variables
+  - var isAuthenticated = isAuthenticated
+
+block append head
+  title Home 
+
+block append body 
+  div(class="min-h-[calc(85vh-200px)] mx-auto flex flex-col items-center justify-center")
+    h1(class="text-6xl font-extrabold tracking-wider") Session Auth
+    h1(class="mt-2 text-xl font-semibold tracking-wider max-w-[600px] text-center") Express, Mongo-DB, tailwind, pug Sample Session Authentication Demo.

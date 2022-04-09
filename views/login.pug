@@ -1,0 +1,15 @@
+extends layout.pug
+
+block append head
+  title Login 
+
+block append body
+  div(class="min-h-[calc(90vh-200px)] mx-auto flex flex-col items-center justify-center")
+    h1(class="text-4xl font-extrabold tracking-wider") Login
+    p(class="text-red-600") #{error}
+    form(action="/auth/login", method="POST" class="w-full max-w-[400px]") 
+      input(type="email", placeholder="Email", name="email", class="mt-5 w-full px-4 py-2 border border-gray-300 focus:outline-none focus:border-gray-500")
+      input(type="password", placeholder="Password", name="password", class="mt-5 w-full px-4 py-2 border border-gray-300 focus:outline-none focus:border-gray-500")
+      input(type="submit", class="mt-5 mb-5 w-full bg-black text-white hover:bg-black/80 font-bold tracking-wide px-4 py-2 border border-black focus:border-gray-300")
+      a(href="/register", class="mt-10 text-base font-normal hover:text-black/60") Don't have account?
+      
